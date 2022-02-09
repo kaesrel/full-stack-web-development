@@ -6,7 +6,7 @@ tasks:
       # echo 'TODO: start app'
       npm run dev
 
-  ports:
-    - port: 3000
-      # visibility: private
-      onOpen: open-browser
+ports:
+  - port: 3000
+    # visibility: private
+    onOpen: open-browser
