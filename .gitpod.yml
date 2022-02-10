@@ -1,3 +1,4 @@
+# Just go to this thingy for more info: https://www.gitpod.io/docs/references/gitpod-yml
 tasks:
   - init: |
       # echo 'TODO: build project'
@@ -15,3 +16,9 @@ ports:
 vscode:
   extensions:
     - svelte.svelte-vscode
+
+github:
+  prebuilds:
+    master: true
+    branches: true
+    pullRequests: true
