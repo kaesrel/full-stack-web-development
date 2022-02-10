@@ -11,3 +11,7 @@ ports:
   - port: 3000
     # visibility: private
     onOpen: open-browser
+
+vscode:
+  extensions:
+    - svelte.svelte-vscode
