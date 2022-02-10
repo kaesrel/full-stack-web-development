@@ -1,5 +1,24 @@
+# Just go to this thingy for more info: https://www.gitpod.io/docs/references/gitpod-yml
 tasks:
   - init: |
-      echo 'TODO: build project'
+      # echo 'TODO: build project'
+      npm install
     command: |
-      echo 'TODO: start app'
+      # echo 'TODO: start app'
+      export HMR_HOST=`gp url 3000`
+      npm run dev
+
+ports:
+  - port: 3000
+    # visibility: private
+    onOpen: open-browser
+
+vscode:
+  extensions:
+    - svelte.svelte-vscode
+
+github:
+  prebuilds:
+    master: true
+    branches: true
+    pullRequests: true
