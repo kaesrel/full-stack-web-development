@@ -17,7 +17,9 @@ const config = {
 				}
 			}
 		},
-		
+		methodOverride: {
+			allowed: ['PUT', 'PATCH', 'DELETE']  // really need these things
+		},
 	}
 };
 
