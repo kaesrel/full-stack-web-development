@@ -37,7 +37,7 @@ export const api = async (request: RequestEvent, data?: Record<string, unknown>)
                 },
                 data: {
                     done: data.done,
-                    text: data.text
+                    text: data.text != null ? data.text : undefined
                 }
             });
             status = 200;
