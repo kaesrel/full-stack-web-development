@@ -1,4 +1,6 @@
 # Just go to this thingy for more info: https://www.gitpod.io/docs/references/gitpod-yml
+image: gitpod/workspace-postgres
+
 tasks:
   - init: |
       # echo 'TODO: build project'
@@ -12,6 +14,8 @@ ports:
   - port: 3000
     # visibility: private
     onOpen: open-browser
+  - port: 5432
+    onOpen: ignore
 
 vscode:
   extensions:
